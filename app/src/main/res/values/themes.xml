@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Platform theme so we don't need the material-components XML library;
+         Compose draws its own Material3 UI on top of this window. -->
+    <style name="Theme.Whtz" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/whtz_background</item>
+    </style>
+</resources>
