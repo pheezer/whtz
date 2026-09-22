@@ -15,13 +15,16 @@ android {
         applicationId = "com.pduvall.whtz"
         minSdk = 26
         targetSdk = 37
-        versionCode = 1
-        versionName = "0.1"
+        // CI overrides these via -Pwhtz.versionCode / -Pwhtz.versionName (e.g. from a release tag).
+        versionCode = (project.findProperty("whtz.versionCode") as String?)?.toIntOrNull() ?: 1
+        versionName = (project.findProperty("whtz.versionName") as String?) ?: "0.1"
     }
 
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
+            // Debug-signed so CI-built release APKs are installable without managing a keystore.
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 
