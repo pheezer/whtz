@@ -20,6 +20,26 @@ Draw your opening hand, cast spells, and the moment a card hits the battlefield 
 tidy black‑bordered proxy for it. It's a fast way to physically play a brewed deck without sleeving
 up a stack of paper proxies by hand.
 
+<p align="center">
+  <img src="docs/printing.gif" alt="Whtz printing a card on a thermal printer" width="300"><br/>
+  <em>Printing a card on the NETUM NT‑861 thermal printer.</em>
+</p>
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/main_menu.png" width="230"><br/>Main menu</td>
+    <td align="center"><img src="docs/card_actions.png" width="230"><br/>Card actions (from hand)</td>
+    <td align="center"><img src="docs/library_filtering.png" width="230"><br/>Filtering the library</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/visual_scroll_option.png" width="230"><br/>Visual card view</td>
+    <td align="center"><img src="docs/scrying.png" width="230"><br/>In‑game actions (Scry)</td>
+    <td></td>
+  </tr>
+</table>
+
 ## How it works
 
 1. **Download the card database (once).** On first launch Whtz pulls the Scryfall bulk data —
